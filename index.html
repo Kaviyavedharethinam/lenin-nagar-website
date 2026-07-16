@@ -27,19 +27,20 @@ SVF Lenin Nagar | Premium 2 BHK Apartments
 
 <body>
 
-
 <!-- ==========================
-NAVIGATION
+NAVIGATION HEADER
 ========================== -->
-
 
 <header class="header">
 
 
 <div class="logo-area">
 
+<a href="https://www.svfhomes.in/" target="_blank">
 
 <img src="logo.png" class="logo" alt="SVF Homes Logo">
+
+</a>
 
 
 <div class="project-logo">
@@ -50,8 +51,9 @@ NAVIGATION
 
 </div>
 
-
 </div>
+
+
 
 
 
@@ -59,24 +61,157 @@ NAVIGATION
 
 <ul>
 
-<li><a href="#home">Home</a></li>
 
-<li><a href="#about">About</a></li>
+<li>
+<a href="#home">Home</a>
+</li>
 
-<li><a href="#highlights">Highlights</a></li>
 
-<li><a href="#amenities">Amenities</a></li>
+<li>
+<a href="#about">About</a>
+</li>
 
-<li><a href="#floorplan">Floor Plan</a></li>
 
-<li><a href="#gallery">Gallery</a></li>
 
-<li><a href="#location">Location</a></li>
+<!-- PROJECT MENU ONLY -->
 
-<li><a href="#contact">Contact</a></li>
+<li class="dropdown">
+
+
+<a href="javascript:void(0)" onclick="toggleProjects()">
+Projects ▾
+</a>
+
+
+
+<ul class="dropdown-menu" id="projectMenu">
+
+
+<li class="submenu">
+
+<a href="#">
+Ongoing Projects ▸
+</a>
+
+
+<ul class="submenu-menu">
+
+
+<li>
+<a href="https://lake-view-garden-apartments-ambattur.svfhomes.in/">
+Lake View
+</a>
+</li>
+
+
+<li>
+<a href="https://svf-bella-vista-flats-ambattur.svfhomes.in/">
+Bella Vista
+</a>
+</li>
+
+
+<li>
+<a href="https://majestic-flats.svfhomes.in/">
+Majestic Flats
+</a>
+</li>
 
 
 </ul>
+
+
+</li>
+
+
+
+
+
+<li class="submenu">
+
+
+<a href="#">
+Upcoming Projects ▸
+</a>
+
+
+<ul class="submenu-menu">
+
+
+<li>
+<a href="https://www.instagram.com/reel/DaxbyOpDghi/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==">
+Nova
+</a>
+</li>
+
+
+</ul>
+
+
+</li>
+
+
+
+</ul>
+
+
+</li>
+
+
+
+
+
+
+<li>
+<a href="#highlights">
+Highlights
+</a>
+</li>
+
+
+
+<li>
+<a href="#amenities">
+Amenities
+</a>
+</li>
+
+
+
+<li>
+<a href="#floorplan">
+Floor Plan
+</a>
+</li>
+
+
+
+<li>
+<a href="#gallery">
+Gallery
+</a>
+</li>
+
+
+
+<li>
+<a href="#location">
+Location
+</a>
+</li>
+
+
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+
+
+</ul>
+
 
 </nav>
 
@@ -87,91 +222,80 @@ NAVIGATION
 
 
 
-
 <!-- ==========================
 HERO SECTION
 ========================== -->
 
-
 <section class="hero" id="home">
 
 
-<img src="hero.jpg" class="hero-image">
+    <div class="hero-overlay"></div>
 
 
-<div class="hero-overlay"></div>
+    <!-- LEFT SIDE CONTENT -->
+
+    <div class="hero-content">
 
 
-
-<div class="hero-content">
-
-
-<p class="small-title">
-
-Ambattur OT, Chennai (Rakki cinemas Backside)
-
-</p>
+        <p class="location-text">
+            Ambattur OT, Chennai (Rakki cinemas Backside)
+        </p>
 
 
-
-<h1>
-
-LENIN NAGAR
-
-</h1>
+        <h1>
+            LENIN NAGAR
+        </h1>
 
 
-<h2>
+        <h2>
+            Premium 2 BHK Apartments
+        </h2>
+        <br></br>
 
-Premium 2 BHK Apartments
-
-</h2>
-
-<br></br>
-
+        <div class="hero-buttons">
 
 
-<div class="hero-buttons">
+            <!-- Book Site Visit -->
+            <a href="#contact" class="primary-btn">
+                Book Site Visit
+            </a>
 
-    <!-- Book Site Visit -->
-    <a href="#contact" class="primary-btn">
-        Book Site Visit
-    </a>
 
-    <!-- 2D Floor Plan -->
-    <a href="#floorplan" class="secondary-btn">
-        View Floor Plan
-    </a>
+            <!-- Floor Plan -->
+            <a href="#floorplan" class="secondary-btn">
+                View Floor Plan
+            </a>
 
-    <!-- 3D Floor Plan -->
-    <a href="3d-floorplan.jpg"
-       target="_blank"
-       class="secondary-btn">
-         3D View
-    </a>
 
-    <!-- Google Map -->
-    <a href="https://maps.app.goo.gl/8ZyTVKwTi2dyHMHu8"
-       target="_blank"
-       class="secondary-btn">
-         Google Map
-    </a>
+            <!-- 3D View -->
+            <a href="3d-floorplan.jpg"
+               target="_blank"
+               class="secondary-btn">
+                3D View
+            </a>
 
-</div>
 
+            <!-- Google Map -->
+            <a href="https://maps.app.goo.gl/8ZyTVKwTi2dyHMHu8"
+               target="_blank"
+               class="secondary-btn">
+                Google Map
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="hero-elevation">
+
+<img src="elivation.jpeg" alt="SVF Homes Elevation">
 
 </div>
 
 
 </section>
-
-
-
-
-
-
-
-
 
 <!-- ==========================
 PROPERTY QUICK DETAILS
@@ -1287,3 +1411,23 @@ Tamil Nadu, INDIA
 
 
 </footer>
+
+
+!-- PROJECT MENU SCRIPT -->
+
+<script>
+
+function toggleProjects(){
+
+    let menu = document.getElementById("projectMenu");
+
+    menu.classList.toggle("show");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
